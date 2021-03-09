@@ -1,0 +1,522 @@
+body {
+    font-family: roboto;
+    /*padding-top: 25px;*/
+}
+
+#toggle {
+    display: none;
+}
+
+#toggle:checked~nav {
+    left: 0;
+}
+
+.my_menu {
+    height: 0px;
+    background-color: #2F3132;
+    position: relative;
+    /* top: 28px;
+    right: 25px; */
+    /* padding-left: calc(100vw - 50px); */
+    display: flex;
+    align-items: center;
+    /* padding-left: 24px; */
+    justify-content: flex-end;
+    /* padding-right: 58px;
+    padding-top: 54px; */
+}
+
+nav {
+    width: 100vw;
+    height: 100vh;
+    background-color: #2F3132;
+    position: absolute;
+    top: 0;
+    left: -100vw;
+    transition: left .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.my_link {
+    color: #C4C4C4 !important;
+    /*font-size: 24px;
+    font-family: sans-serif;
+    padding: 8px; */
+    text-decoration: none;
+}
+
+.my_link:hover {
+    color: #158CC7;
+}
+
+.fas {
+    color: #2F3132;
+    font-size: 32px;
+    margin-top: 60px;
+    margin-right: 28px;
+}
+
+.close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    color: white;
+    font-size: 24px;
+}
+
+.cross {
+    border: 4px solid #FFFFFF;
+    transform: rotate(-135deg);
+}
+
+/*
+ end of nav 
+*/
+.container {
+    max-width: 1160px;
+    margin: auto;
+}
+
+
+
+.bglg {
+    background: #EDEDED;
+    /* background: light-gray; */
+}
+
+.header {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #2F3132;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #2F3132;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 34px;
+    margin-right: 33px;
+}
+
+.cc {
+    /* center content */
+    display: flex;
+    justify-content: center;
+}
+
+.ma {
+    margin: auto;
+}
+
+.top {
+    background: #E0E1E2;
+    padding-top: 25px;
+    padding-bottom: 48px;
+}
+
+.text-top {
+    /* margin-left: 59px;
+    margin-right: 59px; */
+    margin: auto;
+    max-width: 257px;
+}
+
+.top__img {
+    margin-top: 94px;
+    height: 230px;
+    background-image: url(img/MX-Master\ 1.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 41px;
+}
+
+.top__arrow {
+    margin-top: 40px;
+}
+
+.bluetooth {
+    /* background: #EDEDED; */
+}
+
+.blutus-ico {
+    padding-top: 42px;
+    padding-bottom: 27px;
+}
+
+.bluetooth_txt {
+    margin-left: 34px;
+    margin-right: 33px;
+    padding-bottom: 31px;
+}
+
+.bl70d {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #C4C4C4;
+    margin-bottom: 18px;
+}
+
+.blutus__img {
+    height: 218px;
+}
+
+.stol {
+    /* для отладки 
+    background-color: pink;*/
+    padding-bottom: 63px;
+}
+
+.stol__header {
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.h5p {
+    margin-bottom: 5px;
+}
+
+.stol__text {
+    margin-left: 67px;
+    margin-right: 61px;
+    margin-bottom: 30px;
+}
+
+.box_text {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.stol__box {
+    display: flex;
+    justify-content: center;
+    margin-left: 19px;
+    margin-right: 18px;
+    gap: 6px;
+}
+
+.boxed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px;
+    border-color: rgba(47, 49, 50, 1);
+    border-style: solid;
+    /*так тоже можно - HEX, 
+    border: 1px solid #2F3132*/
+    flex-basis: 166px;
+    min-height: 94px;
+    margin-bottom: 28px;
+}
+
+.carousel {
+    margin-bottom: 28px;
+}
+
+.stol-switch {
+    font-size: 14px;
+    padding-top: 28px;
+}
+
+.down_stol {
+    /* position: absolute; можно и вкл, разницы нет*/
+    /* background-color: gray; */
+    height: 30px;
+    width: 250px;
+    /* bottom: -14px; */
+    margin: auto;
+}
+
+.prev_stol {
+    position: relative;
+    left: calc(50vw - 155px);
+    width: 30px;
+    height: 30px;
+    /* background-color: red; */
+    background-image: url(img/arrow-left.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.next_stol {
+    /* position: relative; */
+    right: calc(50vw - 155px);
+    width: 30px;
+    height: 30px;
+    /* background-color: red; */
+    background-image: url(img/arrow-right.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.round_pic_Indicator {
+    /* извините за импортант, но мне не удалось разобраться почему классы бутстрапа переопределяют мои и как сделать наоборот */
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 100%;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+    opacity: 1 !important;
+    /* background-color: #2F3132 !important; */
+}
+
+/* .carousel-indicators{
+    border-top: 0;
+    border-bottom: 0;
+} */
+
+
+
+
+.multidev {
+    padding-top: 70px;
+    /* padding-bottom: 218px; 
+    не оптимально при увеличении*/
+    padding-bottom: 52vw;
+    background-image: url(img/nesk_ustr.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+}
+
+.multi_ol {
+    margin-top: 36px;
+    padding-left: 20px;
+}
+
+.multi-li {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.settings {
+    padding-top: 70px;
+    /* padding-bottom: 200px; */
+}
+
+.settings__slide {
+    margin: 35px 22px 20px 23px;
+}
+
+.settings__item {
+    height: 404px;
+}
+
+
+.down_set {
+    /* для карусели тест */
+    position: relative;
+    top: 456px;
+    padding-right: 15px;
+    /* background-color: black;
+    color: red; */
+}
+
+.round_Indicator {
+    /* извините за импортант, но мне не удалось разобраться почему классы бутстрапа переопределяют мои и как сделать наоборот */
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 100%;
+    margin-left: 15px !important;
+    background-color: #2F3132 !important;
+}
+
+.carousel-indicators {
+    margin: auto;
+}
+
+.apps {
+    margin-top: 60px;
+    padding-bottom: 26px;
+    padding-top: 23px;
+    background-color: #C4C4C4;
+
+    flex-direction: column
+}
+
+.img_apps {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 324px;
+
+    /* margin: 0px 22px 20px 29px; */
+}
+
+.text_white {
+    color: white;
+}
+
+.comf_text {
+    margin-top: 70px;
+}
+
+/* .comf_hdr {
+    margin-left: 34px;
+    margin-right: 34px;
+} */
+
+.comf_img {
+    margin-top: 20px;
+    height: 310px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.comf_img1 {
+    background-image: url(img/comfort.jpg);
+}
+
+.comf_img2 {
+    background-image: url(img/faster.jpg);
+}
+
+.footer {
+    background: #2F3132;
+    height: 75px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 7px;
+    line-height: 8px;
+    text-align: center;
+    color: #C7C8C8;
+    padding-top: 22px;
+}
+
+
+@media(min-width: 768px) {
+    .header {
+        font-size: 40px;
+        line-height: 47px;
+        margin-bottom: 30px;
+    }
+
+    .text {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .top {
+        padding-top: 54px;
+        padding-bottom: 80px;
+    }
+
+    .top_logo {
+        width: 240px;
+    }
+
+    .bl70d {
+        font-size: 150px;
+        line-height: 176px;
+    }
+
+    .stol__box {
+        gap: 30px;
+    }
+
+    .boxed {
+        min-height: 170px;
+    }
+
+    .box_text {
+        margin-left: 31px;
+        margin-right: 32px;
+    }
+
+    .stol-switch {
+        font-size: 24px;
+    }
+
+    .multi_ol {
+        display: flex;
+        justify-content: center;
+        list-style-position: inside;
+        padding-left: 67px;
+        padding-right: 47px;
+    }
+
+    .multi-li {
+        width: auto;
+        margin: auto;
+        font-size: 20px;
+        line-height: 23px;
+        padding-right: 15px;
+        padding-left: 28px;
+        border-left: 1px solid #494949;
+    }
+
+    .multi-li:first-child {
+        border-left: 0;
+        padding-left: 0;
+
+    }
+
+    .settings {
+        padding-bottom: 70px;
+    }
+
+    .settings__slide {
+        margin: 54px 198px 65px 199px;
+    }
+
+    .round_Indicator {
+        width: 25px !important;
+        height: 25px !important;
+        margin-left: 25px !important;
+    }
+
+    .apps {
+        margin-left: 64px;
+        margin-right: 65px;
+    }
+
+    .img_apps {
+        width: 512px;
+    }
+
+    .text_white {
+        font-size: 20px;
+    }
+
+    .blutus__img {
+        height: 597px;
+    }
+
+    .comf_img {
+        height: 549px;
+    }
+
+    .comf_img1 {
+        background-image: url(img/comf1hd1.jpg);
+    }
+
+    .comf_img2 {
+        background-image: url(img/faster1hd1.jpg);
+    }
+}
+
+@media(min-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 580px);
+        padding-right: calc(50% - 580px);
+    }
+}
